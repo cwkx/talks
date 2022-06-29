@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>BMVA22 - Generative Models</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/style.css" id="theme">
 	<link rel="shortcut icon" href="assets/logo.png">
@@ -14,41 +14,53 @@
 
 	<div class="reveal">
 
-		<header style="position: absolute; 
-				font-family: Montserrat, Impact, sans-serif; 
-				color: #eee; 
-				padding-top: 18px; 
-				padding-left: 20px; 
-				white-space: nowrap;
-				overflow: hidden;
-				height: 100px;
-				text-overflow: ellipsis;
-				font-size: 1.5em; 
-				width: 85%;">
+		<header style="
+		position: fixed;
+		font-family: Montserrat, Impact, sans-serif; 
+		padding-left: 10px;
+		height: 1.5em;
+		width: 87%;
+		top: 10px;
+		z-index: 500;
+		font-size: 1.0em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		left: 5px;
+		color: #dfe1e2;
+	  	">
 			<div style="
-				position: fixed;
-				height: 100px;
-				width: 100%;
-				left: 0px;
-				top: 0px;
-				z-index:-700;
-				background-color: #5F676D;"
-			></div>
-			<img style="position: fixed;
-			height: 70px;
-			display: flex;
-			top: -10px;
-			padding-right: 20px;
-			z-index:500;
-			right:0px;" src="assets/durham-university-logo.png" alt="Durham University logo">
+		position: fixed;
+		height: 1.5em;
+		width: 100%;
+		left: 0px;
+		top: 0px;
+		z-index:-700;
+		background-color: #5F676D;">
+				<img style="position: fixed;
+	height: 0.9em;
+	top: -8px;
+	right: 12px;
+	z-index:500;" src="assets/durham-university-logo.png" alt="Durham logo">
+
+			</div>
+
 		</header>
+
 
 		<div class="slides">
 
-			<section data-state="header0">
+			<!-- Title -->
+			<section data-state="q7sa8a">
 				<style>
-					.header0 header:after {
+					.q7sa8a header:before {
+						color: #fff;
 						content: "BMVA 2022";
+					}
+					.q7sa8a header:after {
+						font-size: 0.7em;
+						padding-left: 5px;
+						content: "";
 					}
 				</style>
 				<h2>Deep Generative Modelling</h2>
@@ -58,9 +70,37 @@
 			</section>
 
 
-			<section data-state="header1">
+			<!-- Today's talk -->
+			<section data-state="mn3mn">
 				<style>
-					.header1 header:after {
+					.mn3mn header:before {
+						color: #fff;
+						content: "Modelling data";
+					}
+					.mn3mn header:after {
+						font-size: 0.7em;
+						padding-left: 5px;
+						content: "five simple equations";
+					}
+				</style>
+
+
+				<!-- <h3>Generative modelling vs Discriminative modelling</h3> -->
+
+				\[\begin{aligned}
+				p(\mathbf{x}) &amp; = \sigma(y-x) \\
+				p(\mathbf{x}) &amp; \approx \mathbb{E}_{\mathbf{x}\sim w} x - y - xz \\
+				p(\mathbf{x}) &amp; = -\beta z + xy
+				\end{aligned} \]
+
+				<img width="10%" src="assets/gen-models/gen-vs-disc.svg"
+					alt="Generative models vs discriminative models" />
+			</section>
+
+			<!-- Promise -->
+			<section data-state="a82ja">
+				<style>
+					.a82ja header:after {
 						content: "Generative vs discriminative modelling";
 					}
 				</style>
@@ -77,9 +117,9 @@
 					alt="Generative models vs discriminative models" />
 			</section>
 
-			<section data-state="header2">
+			<section data-state="j23hr">
 				<style>
-					.header2 header:after {
+					.j23hr header:after {
 						content: "Next header";
 					}
 				</style>
@@ -215,9 +255,11 @@
 
 					<div class="fragment">
 						\[ \begin{aligned}
-						\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; =
+						\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t}
+						&amp; =
 						\frac{4\pi}{c}\vec{\mathbf{j}} \\ \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\
-						\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp;
+						\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t}
+						&amp;
 						= \vec{\mathbf{0}} \\
 						\nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
 						\]
@@ -242,7 +284,7 @@
 	<!-- <script src="../plugin/notes/notes.js"></script> -->
 	<script>
 		Reveal.initialize({
-			history: false,
+			history: true,
 			transition: 'linear',
 			// More info at https://revealjs.com/math/
 			plugins: [RevealMath.KaTeX] // , RevealNotes ]
