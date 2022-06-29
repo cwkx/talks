@@ -14,14 +14,14 @@
   * GLOBAL STYLES
   *********************************************/
  :root {
-   --r-background-color: #eee;
+   --r-background-color: #fafafa;
    --r-main-font: Open Sans, sans-serif;
    --r-main-font-size: 40px;
    --r-main-color: #33393c;
    --r-block-margin: 20px;
    --r-heading-margin: 0 0 20px 0;
    --r-heading-font: Montserrat, Impact, sans-serif;
-   --r-heading-color: #282d2f;
+   --r-heading-color: #33393c;
    --r-heading-line-height: 1.2;
    --r-heading-letter-spacing: -0.03em;
    --r-heading-text-transform: none;
