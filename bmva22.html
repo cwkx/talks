@@ -14,14 +14,11 @@
 
 	<div class="reveal">
 
-		s
-
 		<header>
 			<div>
 				<img src="assets/durham-university-logo.png" alt="Durham logo">
 			</div>
 		</header>
-
 
 		<div class="slides">
 
@@ -31,6 +28,7 @@
 					.q7sa8a header:before {
 						content: "BMVA 2022";
 					}
+
 					.q7sa8a header:after {
 						content: "This is a subtitle";
 					}
@@ -42,28 +40,28 @@
 			</section>
 
 
-			<!-- Today's talk -->
-			<section data-state="x7a6q">
+			<!-- The promise -->
+			<section data-state="x7a6q" data-background-image="assets/gen-models/GON.svg" data-background-size="500px">
 				<style>
 					.x7a6q header:before {
 						content: "Modelling data";
 					}
+
 					.x7a6q header:after {
 						content: "in five simple equations";
 					}
 				</style>
-
-
-				<!-- <h3>Generative modelling vs Discriminative modelling</h3> -->
-
-				\[\begin{aligned}
-				p(\mathbf{x}) &amp; = \sigma(y-x) \\
-				p(\mathbf{x}) &amp; \approx \mathbb{E}_{\mathbf{x}\sim w} x - y - xz \\
-				p(\mathbf{x}) &amp; = -\beta z + xy
-				\end{aligned} \]
-
-				<img width="10%" src="assets/gen-models/gen-vs-disc.svg"
-					alt="Generative models vs discriminative models" />
+				<ul>
+					<li>Five main modelling equations</li>
+					<ul>
+						<li>TPAMI</li>
+					</ul>
+					<li>Their characteristics</li>
+					<ul>
+						<li><em>There's no free lunch here</em></li>
+					</ul>
+					<li>Ideas for future research</li>
+				</ul>
 			</section>
 
 			<!-- Promise -->
@@ -74,16 +72,18 @@
 					}
 				</style>
 
+
+				<div class="box">
+					<div class="box-title">
+						<b>Definition: </b> something
+					</div>
+					<div class="box-content">
+					<p>Quality content here</p>
+				</div>
+
 				<!-- <h3>Generative modelling vs Discriminative modelling</h3> -->
 
-				\[\begin{aligned}
-				\dot{x} &amp; = \sigma(y-x) \\
-				\dot{y} &amp; = \rho x - y - xz \\
-				\dot{z} &amp; = -\beta z + xy
-				\end{aligned} \]
 
-				<img width="10%" src="assets/gen-models/gen-vs-disc.svg"
-					alt="Generative models vs discriminative models" />
 			</section>
 
 			<section data-state="j23hr">
@@ -92,13 +92,18 @@
 						content: "Next header";
 					}
 				</style>
-
-
-				<h3>The Cauchy-Schwarz Inequality</h3>
-
-				<script type="math/tex; mode=display">
-						\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-					</script>
+				<div class="box">
+					<div class="box-title">
+						<b>Title</b>
+					</div>
+					<div class="box-content">
+						\[\begin{aligned}
+						p(\mathbf{x}) &amp; = \sigma(y-x) \\
+						p(\mathbf{x}) &amp; \approx \mathbb{E}_{\mathbf{x}\sim w} x - y - xz \\
+						p(\mathbf{x}) &amp; = -\beta z + xy
+						\end{aligned} \]
+					</div>
+				</div>
 			</section>
 
 			<section data-state="header3">
@@ -254,11 +259,20 @@
 	<script>
 		Reveal.initialize({
 			history: true,
-			overview: false,
+			overview: true,
 			transition: 'linear',
 			// More info at https://revealjs.com/math/
 			plugins: [RevealMath.KaTeX] // , RevealNotes ]
 		});
+		// This padding fix for overview is a bit messy
+		Reveal.on('overviewshown', event => {
+			var x = document.getElementsByClassName('reveal-viewport');
+			x[0].style.paddingTop = "0px"
+		})
+		Reveal.off('overviewshown', event => {
+			var x = document.getElementsByClassName('reveal-viewport');
+			x[0].style.paddingTop = "1.5em"
+		})
 	</script>
 
 </body>
