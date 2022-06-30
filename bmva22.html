@@ -14,37 +14,12 @@
 
 	<div class="reveal">
 
-		<header style="
-		position: fixed;
-		font-family: Montserrat, Impact, sans-serif; 
-		padding-left: 10px;
-		height: 1.5em;
-		width: 87%;
-		top: 10px;
-		z-index: 500;
-		font-size: 1.0em;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		left: 5px;
-		color: #dfe1e2;
-	  	">
-			<div style="
-		position: fixed;
-		height: 1.5em;
-		width: 100%;
-		left: 0px;
-		top: 0px;
-		z-index:-700;
-		background-color: #5F676D;">
-				<img style="position: fixed;
-	height: 0.9em;
-	top: -8px;
-	right: 12px;
-	z-index:500;" src="assets/durham-university-logo.png" alt="Durham logo">
+		s
 
+		<header>
+			<div>
+				<img src="assets/durham-university-logo.png" alt="Durham logo">
 			</div>
-
 		</header>
 
 
@@ -54,13 +29,10 @@
 			<section data-state="q7sa8a">
 				<style>
 					.q7sa8a header:before {
-						color: #fff;
 						content: "BMVA 2022";
 					}
 					.q7sa8a header:after {
-						font-size: 0.7em;
-						padding-left: 5px;
-						content: "";
+						content: "This is a subtitle";
 					}
 				</style>
 				<h2>Deep Generative Modelling</h2>
@@ -71,16 +43,13 @@
 
 
 			<!-- Today's talk -->
-			<section data-state="mn3mn">
+			<section data-state="x7a6q">
 				<style>
-					.mn3mn header:before {
-						color: #fff;
+					.x7a6q header:before {
 						content: "Modelling data";
 					}
-					.mn3mn header:after {
-						font-size: 0.7em;
-						padding-left: 5px;
-						content: "five simple equations";
+					.x7a6q header:after {
+						content: "in five simple equations";
 					}
 				</style>
 
@@ -285,6 +254,7 @@
 	<script>
 		Reveal.initialize({
 			history: true,
+			overview: false,
 			transition: 'linear',
 			// More info at https://revealjs.com/math/
 			plugins: [RevealMath.KaTeX] // , RevealNotes ]

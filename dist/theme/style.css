@@ -43,6 +43,7 @@
  .reveal-viewport {
    background: #eee;
    background-color: var(--r-background-color);
+   padding-top: 1.5em;
  }
  
  .reveal {
@@ -110,6 +111,49 @@
    text-shadow: var(--r-heading1-text-shadow);
  }
  
+.reveal header {
+		position: fixed;
+		font-family: Montserrat, Impact, sans-serif; 
+		padding-left: 10px;
+		height: 1.5em;
+		width: 87%;
+		top: 10px;
+		z-index: 500;
+		font-size: 1.0em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		left: 5px;
+		color: #dfe1e2;
+}
+
+.reveal header:before {
+  color: #fff;
+}
+
+.reveal header:after {
+  font-size: 0.7em;
+  padding-left: 7px;
+}
+
+.reveal header div {
+  position: fixed;
+  height: 1.5em;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index:-700;
+  background-color: #5F676D;
+}
+
+.reveal header div img {
+  position: fixed;
+	height: 0.9em;
+	top: -8px;
+	right: 12px;
+	z-index:500;
+}
+
  /*********************************************
   * OTHER
   *********************************************/
@@ -357,4 +401,3 @@
      background-color: var(--r-background-color);
    }
  }
- 
