@@ -16,7 +16,7 @@
  :root {
    --r-background-color: #fafafa;
    --r-main-font: Open Sans, sans-serif;
-   --r-main-font-size: 40px;
+   --r-main-font-size: 35px;
    --r-main-color: #33393c;
    --r-block-margin: 20px;
    --r-heading-margin: 0 0 20px 0;
@@ -155,21 +155,20 @@
 }
 
  /*********************************************
-  * BOXES
+  * BOXES AND COLUMNS
   *********************************************/
-
 
 .reveal div .box {
   background-color: #d3d5df;
   border-radius: 16px 16px 16px 16px;
+  margin: auto;
 }
 
 .reveal div .box-title {
   color: #fafafa;
   background-color: #4a4a4e;
   border-radius: 16px 16px 0px 0px;
-  padding-top: 10px;
-  padding-bottom:10px;
+  padding: 10px 10px 10px 10px;
 }
 
 .reveal div .box-content {
@@ -177,8 +176,29 @@
   border-radius: 0px 0px 16px 16px;
   padding-top: 10px;
   padding-bottom:10px;
+  padding: 10px 10px 10px 10px;
 }
 
+.reveal div .null {
+  border-radius: 16px 16px 16px 16px;
+  margin: auto;
+}
+
+.reveal div .null-title {
+  border-radius: 16px 16px 0px 0px;
+  padding: 10px 10px 10px 10px;
+}
+
+.reveal div .null-content {
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.reveal div .cols {
+  display: flex;
+  flex-direction: row;
+}
 
  /*********************************************
   * OTHER
