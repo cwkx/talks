@@ -1,6 +1,21 @@
 <!doctype html>
 <html lang="en">
 
+<!--
+	strategy:
+
+	- what is a generative model? 6.8
+	- what is a generative model (ii)? 6.4
+	- what do we want to do? 6.3
+	- what are some examples? 6.5
+	- 
+
+	plan slides
+	copy slides
+	practice
+-->
+
+
 <head>
 	<meta charset="utf-8">
 	<title>BMVA22 - Generative Models</title>
@@ -30,7 +45,7 @@
 					}
 
 					.q7sa8a header:after {
-						content: "This is a subtitle";
+						content: "Twitter & GitHub: @cwkx";
 					}
 				</style>
 				<h2>Deep Generative Modelling</h2>
@@ -41,7 +56,7 @@
 
 
 			<!-- The promise -->
-			<section data-state="x7a6q" data-background-image="assets/gen-models/GON.svg" data-background-size="500px">
+			<section data-state="x7a6q">
 				<style>
 					.x7a6q header:before {
 						content: "Modelling data";
@@ -51,32 +66,46 @@
 						content: "in five simple equations";
 					}
 				</style>
-				<ul>
-					<li>Five main modelling equations</li>
-					<ul>
-						<li>TPAMI</li>
-					</ul>
-					<li>Their characteristics</li>
-					<ul>
-						<li><em>There's no free lunch here</em></li>
-					</ul>
-					<li>Ideas for future research</li>
-				</ul>
+				<div class="cols">
+					<div class="box" style="width: 60%;">
+						<div class="box-title">
+							<b>Today</b>
+						</div>
+						<div class="box-content">
+							<ul>
+								<li>Five main modelling equations</li>
+								<li>Their concepts and characteristics</li>
+								<li>Future research directions</li>
+							</ul>
+						</div>
+					</div>
+					<div class="null" style="width: 80%;">
+						<div class="null-title">
+							<b>Recent review</b>
+						</div>
+						<div class="null-content">
+							<div class="citation">
+								Bond-Taylor, Willcocks et al., "Deep Generative Modelling: A Comparative Review of VAEs, GANs, Normalizing Flows, Energy-Based and Autoregressive Models" in IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+							</div>
+							<img width="100%" src="assets/gen-models/review.svg" alt="Review chart">
+						</div>
+					</div>
+				</div>
 			</section>
 
-			<!-- Template -->
+			<!-- Two column template -->
 			<section data-state="a82ja">
 				<style>
 					.a82ja header:before {
-						content: "Title";
+						content: "What is a generative model?";
 					}
 
 					.a82ja header:after {
-						content: "and a subtitle";
+						content: "definition";
 					}
 				</style>
 				<div class="cols">
-					<div class="box" style="width: 60%;">
+					<div class="box" style="width: 30%;">
 						<div class="box-title">
 							<b>Definition: </b> a=b
 						</div>
@@ -86,10 +115,10 @@
 					</div>
 					<div class="null" style="width: 60%;">
 						<div class="null-title">
-							<b>Definition: </b> c
+							<b>Generative model</b>
 						</div>
 						<div class="null-content">
-							<p>Quality content here</p>
+							<img src="assets/gen-models/what-is-gen-model.svg" width="100%">
 						</div>
 					</div>
 				</div>

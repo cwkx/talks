@@ -16,7 +16,7 @@
  :root {
    --r-background-color: #fafafa;
    --r-main-font: Open Sans, sans-serif;
-   --r-main-font-size: 35px;
+   --r-main-font-size: 30px;
    --r-main-color: #33393c;
    --r-block-margin: 20px;
    --r-heading-margin: 0 0 20px 0;
@@ -159,20 +159,21 @@
   *********************************************/
 
 .reveal div .box {
-  background-color: #d3d5df;
+  background-color: #EEEFEF;
   border-radius: 16px 16px 16px 16px;
   margin: auto;
+  font-size: 25px;
 }
 
 .reveal div .box-title {
   color: #fafafa;
-  background-color: #4a4a4e;
+  background-color: #5F676D;
   border-radius: 16px 16px 0px 0px;
   padding: 10px 10px 10px 10px;
 }
 
 .reveal div .box-content {
-  background-color: #d3d5df;
+  background-color: #EEEFEF;
   border-radius: 0px 0px 16px 16px;
   padding-top: 10px;
   padding-bottom:10px;
@@ -198,11 +199,19 @@
 .reveal div .cols {
   display: flex;
   flex-direction: row;
+  gap: 40px;
 }
 
  /*********************************************
   * OTHER
   *********************************************/
+.reveal div .citation {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #555
+}
+
  .reveal p {
    margin: var(--r-block-margin) 0;
    line-height: 1.3;
@@ -238,6 +247,7 @@
  .reveal ol,
  .reveal dl,
  .reveal ul {
+   padding: 5px;
    display: inline-block;
    text-align: left;
    margin: 0 0 0 1em;
